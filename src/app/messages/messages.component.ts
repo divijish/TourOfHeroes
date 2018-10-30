@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-messages',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessagesComponent implements OnInit {
 
-  constructor() { }
+  // tslint:disable-next-line:max-line-length
+  constructor(public messageService: MessageService) {// Here messageService is public because
+    // Angular only binds to public component properties.
+
+
+  }
 
   ngOnInit() {
   }
