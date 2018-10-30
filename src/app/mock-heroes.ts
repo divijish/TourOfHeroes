@@ -1,5 +1,5 @@
 import { Hero } from './hero';
-
+//This file can be deleted not.
 
 export const HEROES: Hero[] = [
     { id: 11, name: 'Mr. Nice' },
